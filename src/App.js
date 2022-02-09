@@ -1,4 +1,3 @@
-import Layout from './views/Layout/Layout';
 import Home from './views/Home/Home';
 import './App.css';
 import Header from './components/Header/Header';
@@ -9,7 +8,6 @@ function App() {
       {/* const {setUser} = useUser(); */}
       <Header />
       <Home />
-      <Layout />
     </div>
   );
 }

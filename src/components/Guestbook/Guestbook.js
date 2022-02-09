@@ -49,9 +49,11 @@ export default function Guestbook() {
         </div>
         <button type="submit">Submit</button>
         <button
+          type="button"
           onClick={() => {
             setGuestEntry('');
             setName('');
+            setUser('');
           }}
         >
           Not {user} ?
