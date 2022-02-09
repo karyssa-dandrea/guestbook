@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { EntryProvider } from './context/EntryContext';
+import { UserProvider } from './context/UserContext';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('test for behavioral and component', () => {
+  render(
+    <UserProvider>
+      <EntryProvider>
+        <App />
+      </EntryProvider>
+    </UserProvider>
+  );
 });

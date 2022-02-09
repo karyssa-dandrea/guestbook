@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEntry } from '../../context/EntryContext';
 import { useUser } from '../../context/UserContext';
+import './Guestbook.css';
 
 export default function Guestbook() {
   const [name, setName] = useState('');

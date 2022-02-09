@@ -1,0 +1,13 @@
+.entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry {
+  border-radius: 10%;
+  border: 3px solid;
+  width: 150px;
+  margin: 19px;
+}

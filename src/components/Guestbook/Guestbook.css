@@ -1,0 +1,16 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a0b3a8;
+  border: 2px solid;
+}
+
+button {
+  padding: 5px;
+  margin: 5px;
+  width: 70px;
+  height: 80px;
+  border-radius: 10%;
+}
