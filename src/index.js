@@ -7,13 +7,11 @@ import { UserProvider } from './context/UserContext';
 import { EntryProvider } from './context/EntryContext';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <UserProvider>
-      <EntryProvider>
-        <App />
-      </EntryProvider>
-    </UserProvider>
-  </React.StrictMode>,
+  <UserProvider>
+    <EntryProvider>
+      <App />
+    </EntryProvider>
+  </UserProvider>,
   document.getElementById('root')
 );
 
