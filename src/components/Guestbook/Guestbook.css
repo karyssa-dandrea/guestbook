@@ -1,6 +1,6 @@
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #a0b3a8;
@@ -13,4 +13,5 @@ button {
   width: 70px;
   height: 80px;
   border-radius: 10%;
+  display: flex;
 }

@@ -4,5 +4,5 @@ import './Header.css';
 
 export default function Header() {
   const { user } = useUser();
-  return <div className="headers">Hello {user ? <p>user</p> : <p>{user}</p>}</div>;
+  return <div className="headers">Hello {user ? <p>{user}</p> : <p>user</p>}</div>;
 }

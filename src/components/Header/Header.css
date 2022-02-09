@@ -1,9 +1,12 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .headers {
   background-color: #c6a78f;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
