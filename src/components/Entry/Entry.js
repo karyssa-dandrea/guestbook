@@ -6,9 +6,9 @@ export default function Entry() {
   const { entry } = useEntry();
   return (
     <div className="entries">
-      {entry.map(({ name, message, id }) => (
-        <div className="entry" key={id}>
-          <p>{name}</p>
+      {entry.map(({ name, message }) => (
+        <div className="entry" key={message}>
+          <h1>{name}</h1>
           <p>{message}</p>
         </div>
       ))}
