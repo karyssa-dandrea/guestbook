@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { UserProvider } from './context/UserContext';
 import { EntryProvider } from './context/EntryContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 ReactDOM.render(
-  <UserProvider>
-    <EntryProvider>
-      <App />
-    </EntryProvider>
-  </UserProvider>,
+  <ThemeProvider>
+    <UserProvider>
+      <EntryProvider>
+        <App />
+      </EntryProvider>
+    </UserProvider>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

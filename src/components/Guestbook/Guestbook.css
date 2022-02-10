@@ -7,11 +7,7 @@ form {
   border: 2px solid;
 }
 
-button {
-  padding: 5px;
-  margin: 5px;
-  width: 70px;
-  height: 80px;
-  border-radius: 10%;
-  display: flex;
+.form-container {
+  margin: auto;
+  justify-content: center;
 }

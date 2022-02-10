@@ -37,7 +37,7 @@ export default function Guestbook() {
     </div>
   );
   return (
-    <div>
+    <div className="form-container">
       <form onSubmit={handleSubmit}>
         {user ? null : guestInput}
         <div>
