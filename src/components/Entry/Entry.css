@@ -1,0 +1,18 @@
+.entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry {
+  border: 1px solid black;
+  margin: 5px;
+  height: auto;
+  max-height: 25vh;
+  max-width: 25vw;
+  overflow-wrap: break-word;
+  padding: 15px;
+  inline-size: 150px;
+  background-color: var(--color-3);
+}
