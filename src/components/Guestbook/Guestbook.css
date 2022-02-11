@@ -1,13 +1,19 @@
 form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #a0b3a8;
+  background-color: var(--color-1);
   border: 2px solid;
+  gap: 1vh;
+  padding: 0 4vh 4vh 4vh;
+  border-radius: 5px;
+  margin-top: 5vh;
+  color: var(--color-4);
 }
 
 .form-container {
   margin: auto;
   justify-content: center;
+  width: 250px;
 }

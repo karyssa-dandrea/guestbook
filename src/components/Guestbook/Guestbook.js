@@ -3,12 +3,15 @@ import { useState } from 'react';
 import { useEntry } from '../../context/EntryContext';
 import { useUser } from '../../context/UserContext';
 import './Guestbook.css';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function Guestbook() {
   const [name, setName] = useState('');
   const [guestEntry, setGuestEntry] = useState('');
   const { user, setUser } = useUser();
   const { entry, setEntry } = useEntry();
+
+  const { theme } = useTheme();
 
   function updateEntry() {
     if (!guestEntry) return;
@@ -23,7 +26,7 @@ export default function Guestbook() {
   };
 
   const guestInput = (
-    <div>
+    <div data-theme={theme}>
       <label>
         Name:
         <input
@@ -37,7 +40,7 @@ export default function Guestbook() {
     </div>
   );
   return (
-    <div className="form-container">
+    <div className="form-container" data-theme={theme}>
       <form onSubmit={handleSubmit}>
         {user ? null : guestInput}
         <div>

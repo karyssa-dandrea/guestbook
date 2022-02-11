@@ -11,19 +11,18 @@ code {
 }
 
 :root {
-  --color-1: #d7cbd4;
-  --color-2: #e3c09b;
-  --color-3: #bfd2de;
-  --color-4: #6f6c9e;
-  --color-5: #ffffff;
-  --color-6: #bb7db2;
+  --color-1: #bbcfd7;
+  --color-2: #ba9a88;
+  --color-3: #5b828e;
+  --color-4: #ac7e62;
+  --color-5: #bb7db2;
 }
 
 [data-theme='dark'] {
-  --color-1: #140c12;
-  --color-2: #2a090a;
-  --color-3: #74250e;
+  --color-1: #733651;
+  --color-2: #a97f75;
+  --color-3: #c685b2;
   --color-4: #141414;
-  --color-5: #a55248;
-  --color-6: #d58d78;
+  --color-5: #140c12;
+  --color-6: #000000;
 }

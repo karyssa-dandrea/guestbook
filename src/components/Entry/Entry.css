@@ -14,4 +14,5 @@
   overflow-wrap: break-word;
   padding: 15px;
   inline-size: 150px;
+  background-color: var(--color-3);
 }

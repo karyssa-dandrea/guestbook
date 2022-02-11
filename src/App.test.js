@@ -3,14 +3,17 @@ import App from './App';
 import { EntryProvider } from './context/EntryContext';
 import { UserProvider } from './context/UserContext';
 import userEvent from '@testing-library/user-event';
+import { ThemeProvider } from './context/ThemeContext';
 
 test('test for behavioral and component', () => {
   render(
-    <UserProvider>
-      <EntryProvider>
-        <App />
-      </EntryProvider>
-    </UserProvider>
+    <ThemeProvider>
+      <UserProvider>
+        <EntryProvider>
+          <App />
+        </EntryProvider>
+      </UserProvider>
+    </ThemeProvider>
   );
   const nameInput = screen.getByLabelText(/Name:/i);
   const messageInput = screen.getByLabelText(/Guest Entry:/i);
@@ -22,7 +25,7 @@ test('test for behavioral and component', () => {
   userEvent.type(messageInput, 'hi');
   expect(messageInput.value).toBe('hi');
 
-  const button = screen.getByRole('button');
+  const button = screen.getByRole('button', { name: /submit/i });
   expect(button).toBeInTheDocument();
 
   userEvent.click(button);
