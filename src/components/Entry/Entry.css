@@ -3,10 +3,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: #d2c1b5;
 }
 
 .entry {
-  border: 1px solid black;
+  border: 1px solid #d2c1b5;
   margin: 5px;
   height: auto;
   max-height: 25vh;
