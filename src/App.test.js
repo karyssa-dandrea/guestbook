@@ -15,13 +15,22 @@ test('test for behavioral and component', () => {
       </UserProvider>
     </ThemeProvider>
   );
-  const nameInput = screen.getByLabelText(/Name:/i);
-  const messageInput = screen.getByLabelText(/Guest Entry:/i);
-  expect(nameInput).toBeInTheDocument();
-  expect(messageInput).toBeInTheDocument();
+  const email = screen.getByRole('textbox', { name: /email/i });
+  const password = screen.getByLabelText(/password/i);
+  const signIn = screen.getByRole('button', {
+    name: /sign in!/i,
+  });
 
-  userEvent.type(nameInput, 'ryssa');
-  expect(nameInput.value).toBe('ryssa');
+  userEvent.type(email, 'k@example.com');
+  userEvent.type(password, '123456');
+
+  expect(email).toHaveValue('k@example.com');
+  expect(password).toHaveValue('123456');
+  expect(signIn).toBeEnabled();
+  userEvent.click(signIn);
+
+  const messageInput = screen.getByLabelText(/Guest Entry:/i);
+  expect(messageInput).toBeInTheDocument();
   userEvent.type(messageInput, 'hi');
   expect(messageInput.value).toBe('hi');
 
