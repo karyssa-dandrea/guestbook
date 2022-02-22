@@ -15,7 +15,6 @@ export default function Guestbook() {
 
   function updateEntry() {
     if (!guestEntry) return;
-    setUser(name);
     setEntry([...entry, { name, message: guestEntry }]);
     setGuestEntry('');
   }
@@ -62,7 +61,7 @@ export default function Guestbook() {
             onClick={() => {
               setGuestEntry('');
               setName('');
-              setUser('');
+              setUser(null);
             }}
           >
             SignOut ?
