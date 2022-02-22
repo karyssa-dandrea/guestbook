@@ -43,3 +43,5 @@ test('test for behavioral and component', () => {
   expect(name).toBeInTheDocument();
   expect(input).toBeInTheDocument();
 });
+
+//refactored test
