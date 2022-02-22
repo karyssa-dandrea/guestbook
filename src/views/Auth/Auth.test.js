@@ -15,7 +15,6 @@ test('should render a sign in form', () => {
       </UserProvider>
     </ThemeProvider>
   );
-  screen.debug();
 
   const email = screen.getByRole('textbox', { name: /email/i });
   const password = screen.getByLabelText(/password/i);
