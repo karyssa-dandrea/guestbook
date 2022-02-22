@@ -26,9 +26,15 @@ export default function Auth() {
   return (
     <div data-theme={theme}>
       <form>
-        <label>Email:</label>
+        <label htmlFor="email">Email:</label>
         <input id="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <label htmlFor="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <button onClick={handleLogin}>Sign In!</button>
       </form>
     </div>
