@@ -3,13 +3,13 @@ import { Redirect } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { useUser } from '../../context/UserContext';
 
-export default function PrivateRoute({ children, ...rest }) {
+export default function PrivateRoute({ children, ...routeProps }) {
   const { user } = useUser();
   return (
     <Route
-      {...rest}
+      {...routeProps}
       render={({ location }) =>
-        user.user ? (
+        user ? (
           children
         ) : (
           <Redirect

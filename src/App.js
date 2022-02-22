@@ -5,6 +5,7 @@ import { useTheme } from './context/ThemeContext';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { Route, Switch } from 'react-router-dom';
 import Auth from './views/Auth/Auth';
+import PrivateRoute from './components/Private/PrivateRoute';
 
 function App() {
   const { theme } = useTheme();
@@ -16,7 +17,9 @@ function App() {
             <Auth />
           </Route>
           <Header />
-          <Home />
+          <PrivateRoute path="/">
+            <Home />
+          </PrivateRoute>
         </Switch>
       </BrowserRouter>
     </div>
