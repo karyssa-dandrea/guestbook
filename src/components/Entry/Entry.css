@@ -1,0 +1,19 @@
+.entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #d2c1b5;
+}
+
+.entry {
+  border: 1px solid #d2c1b5;
+  margin: 5px;
+  height: auto;
+  max-height: 25vh;
+  max-width: 25vw;
+  overflow-wrap: break-word;
+  padding: 15px;
+  inline-size: 150px;
+  background-color: var(--color-3);
+}
